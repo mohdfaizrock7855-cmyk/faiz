@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NISAR General Store - Your One-Stop Shop</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+        }
+        .text-shadow-subtle {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-fixed": "#0d1c32",
+                      "surface-container-high": "#e8e8e9",
+                      "surface-variant": "#e2e2e4",
+                      "primary-fixed-dim": "#a4cce1",
+                      "inverse-on-surface": "#f1f0f2",
+                      "primary-container": "#0d3b4c",
+                      "tertiary-container": "#cba72f",
+                      "surface": "#f9f9fa",
+                      "surface-container": "#eeeeef",
+                      "secondary": "#515f78",
+                      "on-primary-container": "#7da5b9",
+                      "on-primary-fixed": "#001f2a",
+                      "on-secondary-fixed-variant": "#39475f",
+                      "outline": "#71787c",
+                      "on-surface": "#1a1c1d",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary-fixed-variant": "#224c5d",
+                      "on-secondary-container": "#55637d",
+                      "primary-fixed": "#bfe9fe",
+                      "surface-tint": "#3c6376",
+                      "on-error-container": "#93000a",
+                      "on-tertiary-fixed": "#241a00",
+                      "on-primary": "#ffffff",
+                      "tertiary-fixed-dim": "#e9c349",
+                      "primary": "#002532",
+                      "on-secondary": "#ffffff",
+                      "outline-variant": "#c1c7cc",
+                      "on-surface-variant": "#41484c",
+                      "on-error": "#ffffff",
+                      "on-tertiary-fixed-variant": "#574500",
+                      "tertiary": "#735c00",
+                      "secondary-container": "#d2e0fe",
+                      "inverse-primary": "#a4cce1",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-low": "#f3f3f5",
+                      "secondary-fixed": "#d6e3ff",
+                      "error": "#ba1a1a",
+                      "on-tertiary-container": "#4e3d00",
+                      "surface-dim": "#dadadb",
+                      "error-container": "#ffdad6",
+                      "background": "#f9f9fa",
+                      "surface-container-highest": "#e2e2e4",
+                      "on-background": "#1a1c1d",
+                      "secondary-fixed-dim": "#b9c7e4",
+                      "surface-bright": "#f9f9fa",
+                      "tertiary-fixed": "#ffe088",
+                      "inverse-surface": "#2f3132"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-gap": "48px",
+                      "container-padding": "24px",
+                      "gutter": "16px",
+                      "base-unit": "8px",
+                      "element-gap": "12px"
+              },
+              "fontFamily": {
+                      "body-md": ["Work Sans"],
+                      "label-sm": ["Work Sans"],
+                      "headline-md": ["Newsreader"],
+                      "body-lg": ["Work Sans"],
+                      "headline-lg": ["Newsreader"],
+                      "headline-xl": ["Newsreader"],
+                      "label-bold": ["Work Sans"]
+              },
+              "fontSize": {
+                      "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                      "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-lg": ["32px", {"lineHeight": "1.25", "fontWeight": "600"}],
+                      "headline-xl": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                      "label-bold": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface dark:bg-on-secondary-fixed border-b border-outline-variant dark:border-on-secondary-fixed-variant">
+<div class="flex justify-between items-center w-full px-container-padding max-w-7xl mx-auto h-16">
+<div class="flex items-center gap-base-unit">
+<img alt="NISAR General Store Logo" class="h-10 w-10 object-contain" data-alt="A clean, professional modern flat vector logo for 'NISAR General Store' featuring a minimalist shopping bag icon. The color palette uses deep teal and sophisticated gold on a white background, embodying a trustworthy and friendly neighborhood retail aesthetic with sharp, clean lines." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1mSyNaEUniGdt607J4iVMKlhYnHE_ECmnBv7S4OCs6WdHwUf_C3oSyctL2wLJECgMp66xRhblQa9aGCr_8N0Frok3jumfBMrY7Ys9OtchyY5YdjBsNhRvmqYmIchtKc44aHhL1Why1EGKit96zXQVo0vlAG8pL9fc4dcY5glGxDlS2ZcwvaMCegioYjc75-JA1y1h2FVNSum04KlFbbmSadQrFeh9BbRq_t_DqDABHFG2WsD2DhIVCOi-u-c4pk71hpsQwymWKuDk"/>
+<span class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed">NISAR General Store</span>
+</div>
+<nav class="hidden md:flex gap-gutter items-center">
+<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary dark:border-primary-fixed py-1 transition-opacity active:opacity-80" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-on-primary-fixed-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors" href="#">Shop</a>
+<a class="text-on-surface-variant dark:text-on-primary-fixed-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors" href="#">Contact</a>
+<button class="ml-4 bg-primary text-on-primary px-6 py-2 rounded-full font-label-bold flex items-center gap-2 hover:opacity-90 transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">call</span>
+                    Call Now
+                </button>
+</nav>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-primary">menu</span>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative pt-32 pb-20 overflow-hidden bg-surface-container-lowest">
+<div class="absolute inset-0 z-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(#002532 1px, transparent 1px); background-size: 24px 24px;"></div>
+<div class="max-w-7xl mx-auto px-container-padding flex flex-col md:flex-row items-center gap-section-gap relative z-10">
+<div class="w-full md:w-1/2 text-center md:text-left">
+<span class="inline-block bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-label-bold mb-4">Trusted Neighborhood Store</span>
+<h1 class="text-headline-xl font-headline-xl text-primary mb-6 leading-tight">Your One-Stop Shop for Everything!</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant mb-8 max-w-lg mx-auto md:mx-0">
+                    Premium Cosmetics, Exquisite Laces, Stationery, &amp; Daily Healthcare Essentials. Experience the joy of finding everything you need under one roof.
+                </p>
+<div class="flex flex-col sm:flex-row justify-center md:justify-start gap-gutter">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-lg font-label-bold flex items-center justify-center gap-2 hover:shadow-lg transition-all">
+                        Browse Products
+                    </button>
+<button class="bg-surface-container-high text-primary border border-outline-variant px-8 py-4 rounded-lg font-label-bold flex items-center justify-center gap-2 hover:bg-surface-variant transition-all">
+<span class="material-symbols-outlined">chat</span>
+                        Send Order on WhatsApp
+                    </button>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<div class="relative group">
+<div class="absolute -inset-4 bg-tertiary-container/20 rounded-xl blur-2xl group-hover:bg-tertiary-container/30 transition-all"></div>
+<img alt="Store Interior" class="relative rounded-xl shadow-xl w-full h-[450px] object-cover" data-alt="A brightly lit, meticulously organized interior of a modern general store. The shelves are filled with a colorful array of stationery, premium gifts, and educational toys. The atmosphere is warm and welcoming, with soft high-key lighting that emphasizes a clean, well-stocked environment in a professional light-mode aesthetic." src="https://lh3.googleusercontent.com/aida/ADBb0ujF0G--tDu7Vnfa3ox7IU0YTgKY1Araz5ZPe7pBPyhEuMPE9qFRZfcBqaEmVJkIVj6xE9c4o5BJSUWIRTB1E2IljPt66nfaKMlZvgEHrOwqReVHISr7DZVrlobMRx_MyRr7FbjIzat_pAUfOwITjXjwhWvyQCShFoQfrr9dSQVfcuMsYze_DUgDggYZNoM5MfQNrUcAdqP4vV9XFvTgtlBnjBx37sgVCiIm_to_NhgnPK4xwnM_sZHKvDlnXeML25YkTHZgp3CqQbI"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Categories Section -->
+<section class="py-section-gap bg-surface">
+<div class="max-w-7xl mx-auto px-container-padding">
+<div class="text-center mb-12">
+<h2 class="text-headline-lg font-headline-lg text-primary mb-2">Our Specialties</h2>
+<div class="h-1 w-20 bg-tertiary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1: Cosmetics -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-md transition-shadow group">
+<div class="h-64 overflow-hidden">
+<img alt="Cosmetics" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A sophisticated display of high-end cosmetic products, including hair color kits, luxury skincare creams, and health supplements. The arrangement is elegant and clean, set against a soft neutral background with professional studio lighting. The palette features deep teals and warm tones, reflecting a premium boutique and healthcare feel." src="https://lh3.googleusercontent.com/aida/ADBb0uiAXm0Enh7DCI6ZXzqb_NUoKjKkyngkdf1dcbIKxJjfI9lNI4ca3fL6QifzyxaBJG6A3ezmInIzUg0ftYF1oR30AUtJkAmnO86f1i_kNRvgdhg7wGO_ZGow6YTo5aMmalPJkvB9rz3mzG4uPUb9-699Dxp06QFdExCFk8NIf7MAU3yZL66ElpKgEQTmXzZjY8AaeHTTJ197JmJCdbEOcf6Zf4SSEhNUn2Vw_dVtJDow-Q2IkSbjmPm3JQsi2AQ3-qP8HLGDgA9kVoM"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-headline-md font-headline-md text-primary">Cosmetics &amp; Beauty</h3>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed text-label-sm px-2 py-1 rounded font-bold">Premium</span>
+</div>
+<ul class="space-y-2 mb-6 text-on-surface-variant font-body-md">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span> Professional Hair Color</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span> Luxury Face Creams</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span> Daily Healthcare Items</li>
+</ul>
+<button class="w-full py-3 border border-primary text-primary font-label-bold rounded hover:bg-primary hover:text-on-primary transition-colors">Explore Category</button>
+</div>
+</div>
+<!-- Card 2: Fancy & Tailoring -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-md transition-shadow group">
+<div class="h-64 overflow-hidden">
+<img alt="Tailoring Accessories" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A vibrant and texture-rich display of decorative tailoring accessories. Glossy ribbons, intricate lace rolls, and decorative trims are arranged in an organized, artistic pattern. The lighting highlights the materiality and fine details of the fabrics, creating a sense of quality craftsmanship and creative variety in a modern shop setting." src="https://lh3.googleusercontent.com/aida/ADBb0ugesz9yVrODqb4ghVv7YPxk7dgEi0WIha06-SE4jox4C293BvSOlbg2isY9MISB0F5rZCEZ0WokuH9qmnq_nH8Xm4pYNuN_ZIsD9vEFGhPzFCEYdTSXVqLXogR66YCCt0lruUOD7SzMeUEnLTEK2PK_1oHXdFqACzNh_dSAE44PktG7YmtqwSpWG-hnybyfqWsQi--6zBFlzDtKZeyp21iJPJXS2pNDd1y9OSb2VkLo3rXMZcmw62sHFbU30_YS5r_dr_nlRHmzSoE"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-headline-md font-headline-md text-primary">Fancy &amp; Tailoring</h3>
+<span class="bg-secondary-container text-on-secondary-container text-label-sm px-2 py-1 rounded font-bold">New Arrival</span>
+</div>
+<ul class="space-y-2 mb-6 text-on-surface-variant font-body-md">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span> Designer Laces &amp; Borders</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span> Silk &amp; Satin Ribbons</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span> Decorative Rolls</li>
+</ul>
+<button class="w-full py-3 border border-primary text-primary font-label-bold rounded hover:bg-primary hover:text-on-primary transition-colors">Explore Category</button>
+</div>
+</div>
+<!-- Card 3: Stationery -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-md transition-shadow group">
+<div class="h-64 overflow-hidden">
+<img alt="Stationery" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A diverse collection of premium stationery items, including high-quality pens, art supplies, and gift items. The composition uses a flat-lay style to showcase the variety and quality of the daily essentials. The lighting is bright and airy, emphasizing the organized and comprehensive nature of the store's inventory." src="https://lh3.googleusercontent.com/aida/ADBb0ujF0G--tDu7Vnfa3ox7IU0YTgKY1Araz5ZPe7pBPyhEuMPE9qFRZfcBqaEmVJkIVj6xE9c4o5BJSUWIRTB1E2IljPt66nfaKMlZvgEHrOwqReVHISr7DZVrlobMRx_MyRr7FbjIzat_pAUfOwITjXjwhWvyQCShFoQfrr9dSQVfcuMsYze_DUgDggYZNoM5MfQNrUcAdqP4vV9XFvTgtlBnjBx37sgVCiIm_to_NhgnPK4xwnM_sZHKvDlnXeML25YkTHZgp3CqQbI"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-headline-md font-headline-md text-primary">Stationery &amp; Needs</h3>
+<span class="bg-primary-fixed text-on-primary-fixed text-label-sm px-2 py-1 rounded font-bold">Essential</span>
+</div>
+<ul class="space-y-2 mb-6 text-on-surface-variant font-body-md">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span> Premium Pens &amp; Journals</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span> Educational Toys &amp; Gifts</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span> Daily Household Items</li>
+</ul>
+<button class="w-full py-3 border border-primary text-primary font-label-bold rounded hover:bg-primary hover:text-on-primary transition-colors">Explore Category</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- WhatsApp CTA Section -->
+<section class="py-section-gap">
+<div class="max-w-5xl mx-auto px-container-padding">
+<div class="bg-primary-container text-on-primary p-8 md:p-12 rounded-2xl relative overflow-hidden flex flex-col md:flex-row items-center gap-gutter">
+<div class="absolute top-0 right-0 w-64 h-64 bg-tertiary-container/10 rounded-full -mr-32 -mt-32"></div>
+<div class="relative z-10 w-full md:w-2/3">
+<h2 class="text-headline-lg font-headline-lg mb-4">Order Anything via WhatsApp!</h2>
+<p class="text-body-lg font-body-lg mb-8 opacity-90">
+                        Can't visit the store? Just send us a photo of your list or a voice note. We'll pack it up and have it ready for you!
+                    </p>
+<a class="inline-flex items-center gap-4 bg-[#25D366] text-white px-8 py-4 rounded-xl font-label-bold text-lg hover:scale-105 transition-transform shadow-lg" href="https://wa.me/919453157463">
+<svg class="w-8 h-8 fill-current" viewbox="0 0 24 24"><path d="M12.031 6.172c-2.32 0-4.518.903-6.158 2.543-3.395 3.395-3.395 8.922 0 12.317.022.022.046.046.071.066l-1.077 3.931 4.025-1.055c.026.015.053.03.079.044 1.556.84 3.298 1.282 5.06 1.282 5.753 0 10.435-4.682 10.435-10.435s-4.682-10.435-10.435-10.435zm5.546 14.88c-1.503 1.233-3.415 1.912-5.546 1.912-1.554 0-3.057-.358-4.406-1.041l-.316-.161-2.4 0.629 0.64-2.333-.174-.277c-.708-1.127-1.082-2.434-1.082-3.791 0-3.957 3.219-7.175 7.175-7.175 1.918 0 3.72.747 5.074 2.101 1.355 1.355 2.101 3.156 2.101 5.074 0 2.054-.78 3.94-2.146 5.062zm1.96-5.834c-.105-.175-.389-.281-.818-.496s-2.531-1.248-2.924-1.391c-.393-.143-.68-.214-.966.215s-1.107 1.391-1.356 1.677-.499.322-.928.107c-.429-.215-1.812-.667-3.451-2.128-1.276-1.138-2.137-2.544-2.387-2.973s-.027-.663.187-.877c.193-.192.429-.496.644-.744.215-.248.286-.425.429-.712s.072-.536-.036-.75-.966-2.325-1.323-3.184c-.347-.837-.7-.723-.966-.736-.25-.013-.536-.015-.823-.015s-.751.107-1.144.536c-.393.429-1.502 1.467-1.502 3.578s1.537 4.15 1.751 4.436c.215.286 3.025 4.62 7.327 6.475 1.023.441 1.822.705 2.445.903 1.028.327 1.964.281 2.704.17 0.825-.124 2.531-1.034 2.888-2.033.358-.999.358-1.854.25-2.033z"></path></svg>
+                        Order Anything via WhatsApp! [9453157463]
+                    </a>
+</div>
+<div class="w-full md:w-1/3 flex justify-center">
+<span class="material-symbols-outlined text-[160px] text-tertiary-container opacity-40">shopping_cart_checkout</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact & Visit Section -->
+<section class="py-section-gap bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-container-padding">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-section-gap items-center">
+<div>
+<h2 class="text-headline-lg font-headline-lg text-primary mb-8">Visit Our Store</h2>
+<div class="space-y-8">
+<div class="flex gap-4">
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary">location_on</span>
+</div>
+<div>
+<h4 class="font-label-bold text-primary mb-1">Our Address</h4>
+<p class="text-on-surface-variant">NISAR General Store, Main Market Road,<br/>City Center, District Area - 226001</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary">schedule</span>
+</div>
+<div>
+<h4 class="font-label-bold text-primary mb-1">Shop Timings</h4>
+<p class="text-on-surface-variant">Mon - Sat: 0
